@@ -1,0 +1,259 @@
+/** General **/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: rgba(249, 246, 248, 0.12);
+    line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+#about-id{
+    font-size: 1.5em;
+}
+/* Header */
+
+
+header span, header li{
+    font-size: 1.1em;
+}
+.about-nav{
+    display: flex;
+    margin: auto;
+}
+
+.first-nav-container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.second-nav-container{
+    margin-top: -70px;
+}
+
+.second-nav-container button{
+    margin-top: -50px;
+    position: absolute;
+    right: 10px;
+}
+
+/* Submenu Class*/
+/* Base styles for the dropdown submenu */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+/* Add a left margin to make the submenu items more distinct */
+.dropdown-submenu > .dropdown-item::after {
+    content: "\f0da"; /* FontAwesome right arrow */
+    float: right;
+    border: none;
+    font-family: 'FontAwesome';
+}
+
+/* Ensure the submenu is displayed on hover */
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Optional: Style the submenu to look good */
+.dropdown-menu {
+    background-color: #fff; /* Change as needed */
+    border: 1px solid rgba(0, 0, 0, 0.15); /* Change as needed */
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #0b64e9;
+    text-decoration: none;
+    background-color: #f8f9fa; /* Change as needed */
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 0.25rem 1.5rem;
+}
+
+/* Optional: Adding custom styles for submenu items */
+.dropdown-menu > .dropdown-submenu > .dropdown-item {
+    padding: 0.25rem 2.5rem 0.25rem 1.5rem;
+}
+
+
+/*Section 1: Foundations of JavaScript */
+#foundations-of-javascript{
+    max-width: 80vw;
+    margin: auto;
+}
+
+.category{
+    margin-bottom: 30px;
+    text-align: center;
+    color: blueviolet;
+    text-transform: uppercase;
+}
+
+.subcategory{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgb(15, 160, 205);
+}
+
+.card{
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(105, 104, 103, 0.3);
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.card input{
+    width: 100%;
+}
+hr{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container-fluid .row .card-text{
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 1.2em;
+    color: black;
+    font-weight: 400;
+}
+
+.container-fluid .row .card-title{
+    text-align: center;
+text-decoration: underline;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: rgb(25, 99, 114);
+}
+
+.card-text h6{
+    color: rgb(49, 6, 149);
+}
+
+button, label{
+    margin: 7px;
+}
+
+/* Footer */
+
+.footer{
+	background-color: rgb(3, 15, 19);
+    padding: 70px 0;
+    box-shadow: 10px 10px 10px 10px rgba(7, 3, 24, 0.815);
+}
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #a10a3c;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 10px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+@media screen and (min-width: 768px) {
+.backend{
+margin-right: 70vw;
+}
+}
+
+@media screen and (min-width: 992px) {
+    .backend{
+    margin-right: 40vw;
+    }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .backend{
+        margin-right: 40vw;
+        }
+        }
