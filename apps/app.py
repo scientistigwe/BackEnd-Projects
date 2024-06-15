@@ -49,5 +49,9 @@ def core_python():
         'final_state': final_state
     })
 
+@app.route('/')
+def base_html():
+    render_template('base.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
