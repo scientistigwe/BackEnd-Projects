@@ -5,7 +5,7 @@ import os
 from flask_cors import CORS
 from flask import jsonify
 
-app = Flask(__name__, static_folder='scripts/')
+app = Flask(__name__, static_folder='static/')
 
 CORS(app)  # Enable CORS for all routes
 
@@ -16,7 +16,7 @@ current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 template_folder = os.path.join(current_dir, 'templates')
 app.template_folder = template_folder
 
-@app.route('/python/core-python')
+@app.route('/index')
 def core_python():
     todo_list = ToDoList()
     
@@ -49,9 +49,9 @@ def core_python():
         'final_state': final_state
     })
 
-@app.route('/')
+@app.route('/templates/')
 def base_html():
-    render_template('base.html')
+    return render_template('base.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

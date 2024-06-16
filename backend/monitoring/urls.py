@@ -9,5 +9,5 @@ urlpatterns = [
     path('', include(router.urls)),
     path('sensors/', SensorDataViewSet.as_view({'get': 'list'})),
     path('chart/', SensorDataViewSet.as_view({'get': 'render_chart'})),
-    path('api/sensors/filter_and_aggregate_data/', SensorDataViewSet.as_view({'get': 'filter_and_aggregate_data'})),
+    path('sensors/filter_and_aggregate_data/', SensorDataViewSet.as_view({'get': 'filter_and_aggregate_data'})),
 ]
